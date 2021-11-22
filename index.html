@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date timer</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reseter.css/2.0.0/reseter.min.css"
+      integrity="sha512-gCJkkUMGTe73+FMwog6gIBCVJIMXRoc21l6/IPCuzxCex/1sxvO8ctb6Zd4/WWs2UMqmtnDrAdhJht5pEY0LXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/9a4546f921.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="color-scheme" content="dark light" />
+  </head>
+
+  <body>
+    <div class="counter-app">
+      <div class="settings">
+        <h1>Settings</h1>
+        <label for="event-name">Event name:</label>
+        <input type="text" id="event-name" placeholder="Write event name" />
+        <table class="date">
+          <tr>
+            <td><label for="event-day">Day:</label></td>
+            <td><label for="event-month">Month:</label></td>
+            <td><label for="event-year">Year:</label></td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="event-day"
+                maxlength="2"
+                value="`getFullYear()`"
+              />
+            </td>
+            <td>
+              <input type="number" id="event-month" maxlength="2" value="0" />
+            </td>
+            <td>
+              <input type="number" id="event-year" maxlength="4" value="0" />
+            </td>
+          </tr>
+        </table>
+        <label for="event-image"></label>
+        <input
+          type="text"
+          id="event-image"
+          placeholder="paste url here"
+          value=""
+        />
+
+        <button class="save">Save</button>
+      </div>
+
+      <div class="app-body">
+        <div class="image-section">
+          <div class="settings-btn"><i class="fas fa-sliders-h"></i></div>
+        </div>
+        <div class="time-section">
+          <h3><span class="event">New Year</span> in:</h3>
+          <div class="time-cards">
+            <div class="card">
+              <p class="days-count number">1</p>
+              <p class="card-title">Days</p>
+            </div>
+            <div class="card">
+              <p class="hours-count number">23</p>
+              <p class="card-title">Hours</p>
+            </div>
+            <div class="card">
+              <p class="minutes-count number">48</p>
+              <p class="card-title">Minutes</p>
+            </div>
+            <div class="card">
+              <p class="seconds-count number">35</p>
+              <p class="card-title">Seconds</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

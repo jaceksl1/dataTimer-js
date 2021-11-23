@@ -29,7 +29,7 @@
       <div class="settings">
         <h1>Settings</h1>
         <label for="event-name">Event name:</label>
-        <input type="text" id="event-name" placeholder="Write event name" />
+        <input type="text" id="event-name" value="New Year" />
         <table class="date">
           <tr>
             <td><label for="event-day">Day:</label></td>
@@ -38,28 +38,18 @@
           </tr>
           <tr>
             <td>
-              <input
-                type="number"
-                id="event-day"
-                maxlength="2"
-                value="`getFullYear()`"
-              />
+              <input type="number" id="event-day" maxlength="2" value="1" />
             </td>
             <td>
-              <input type="number" id="event-month" maxlength="2" value="0" />
+              <input type="number" id="event-month" maxlength="2" value="1" />
             </td>
             <td>
-              <input type="number" id="event-year" maxlength="4" value="0" />
+              <input type="number" id="event-year" maxlength="4" value="2023" />
             </td>
           </tr>
         </table>
         <label for="event-image"></label>
-        <input
-          type="text"
-          id="event-image"
-          placeholder="paste url here"
-          value=""
-        />
+        <input type="text" id="event-image" value="/images/background.jpg" />
 
         <button class="save">Save</button>
       </div>
